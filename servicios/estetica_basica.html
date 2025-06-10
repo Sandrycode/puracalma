@@ -1,0 +1,358 @@
+<!-- <?php
+session_start();
+?> -->
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estética básica - Pura Calma</title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/modal_imagenes.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lora:wght@400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- <?php include '../includes/nav.php'; ?> -->
+
+    <nav class="navbar">
+        <a href="../index.html">
+            <div class="logo">
+                <img src="../imagenes/logo.png" alt="Logo">
+            </div>
+        </a>
+
+        <div class="nav-links">
+            <a href="../index.html">Inicio</a>
+
+            <!-- Menú desplegable para Servicios -->
+            <div class="dropdown">
+                <a href="../servicios/servicios.html">Servicios</a>
+                <div class="dropdown-content">
+                    <a href="../servicios/masajes.html">Masajes</a>
+                    <a href="../servicios/terapias_orientales.html">Terapias Orientales</a>
+                    <a href="../servicios/estetica_basica.html">Estética Básica</a>
+                    <a href="../servicios/tratamientos_faciales.html">Tratamientos Faciales</a>
+                    <a href="../servicios/tratamientos_corporales.html">Tratamientos Corporales</a>
+                </div>
+            </div>
+
+            <a href="../paginas/construccion.html">Reservas online</a>
+            <a href="../paginas/construccion.html">Tienda</a>
+            <a href="../paginas/construccion.html">Zona premium</a>
+            <a href="../paginas/quienes_somos.phtml">Quienes somos</a>
+            <a href="../paginas/contacto.html">Contacto</a>
+            <a href="../videos/demobd.mp4">Demo BD</a>
+            <a href="../paginas/construccion.html" class="nav-link">Iniciar sesión</a>
+
+        </div>
+    </nav>
+
+    <section class="about-us">
+        <div class="about-content1">
+            <div class="text-content">
+                <h1 class="titulo">Estética básica</h1>
+                <p>En <strong>Pura Calma</strong>, te ofrecemos una gama de servicios de estética básica
+                    diseñados para realzar tu belleza natural y proporcionarte una experiencia de bienestar integral.
+                    Nuestra misión es crear un ambiente tranquilo y acogedor donde puedas relajarte y disfrutar de
+                    cuidados personalizados. Nos dedicamos a ayudarte a sentirte y lucir lo mejor posible con cada
+                    visita.</p>
+                <p>Nuestros tratamientos de estética básica incluyen faciales rejuvenecedores, depilación precisa, y
+                    servicios de manicura y pedicura, todos realizados con productos de alta calidad y técnicas
+                    avanzadas. Cada sesión está pensada para satisfacer tus necesidades específicas, asegurando
+                    resultados visibles y duraderos que te harán sentir renovada y radiante</p>
+                <p>En <strong>Pura Calma</strong>, creemos que el cuidado personal es esencial para tu
+                    bienestar general. Nuestro equipo de profesionales está comprometido a ofrecerte un servicio
+                    excepcional en cada detalle. Permítenos ser tu refugio de tranquilidad donde puedes rejuvenecer tu
+                    cuerpo y espíritu, disfrutando de un momento de pura calma y belleza.</p>
+            </div>
+        </div>
+
+        <section class="servicios">
+
+            <!-- Tratamiento rejuvenecedor -->
+            <div class="servicio">
+                <img src="../imagenes/pura_calma.jpg" alt="Tratamiento rejuvenecedor" class="imagen-servicio" onclick="mostrarModal('modal-rejuvenecedor', '../imagenes/pura_calma.jpg')">
+                <h3 class="titulo-servicio">Tratamiento rejuvenecedor</h3>
+                <div class="descripcion">
+                    <p>El tratamiento rejuvenecedor revitaliza la piel, reduciendo arrugas y flacidez.</p>
+                    <button class="desplegar">Ver más</button>
+                    <div class="mas-info" style="max-height: 0; overflow: hidden;">
+                        <p>El tratamiento rejuvenecedor es una terapia especializada que revitaliza la piel, reduce
+                            arrugas, mejora la elasticidad y promueve una apariencia más fresca y juvenil, restaurando
+                            su luminosidad.</p>
+                        <p><span style="font-weight: bold; color: #b28d5b; font-size: 1.2em;">Duración: 1 hora</span></p>
+                        <p><span style="font-weight: bold; color: #b28d5b; font-size: 1.2em;">Precio: 50€</span></p>
+                        <a href="../paginas/construccion.html" class="enlace-servicio boton-pequeno">Reservar</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal específico para Tratamiento rejuvenecedor -->
+            <div id="modal-rejuvenecedor" class="modal">
+                <span class="cerrar" onclick="cerrarModal('modal-rejuvenecedor')">&times;</span>
+                <img class="modal-contenido" id="imagen-rejuvenecedor">
+                <div class="texto-modal">
+                    <h2>Tratamiento rejuvenecedor</h2>
+                    <p>El tratamiento rejuvenecedor revitaliza la piel, reduciendo arrugas y flacidez.<br>Duración: 1 hora. Precio: 50€.</p>
+                    <a href="../paginas/construccion.html" class="enlace-servicio enlace-servicio-pequeño">Reservar</a>
+                </div>
+            </div>
+
+
+            <!-- Tratamiento hidratante -->
+            <div class="servicio">
+                <img src="../imagenes/pura_calma.jpg" alt="Tratamiento hidratante" class="imagen-servicio" onclick="mostrarModal('modal-hidratante', '../imagenes/pura_calma.jpg')">
+                <h3 class="titulo-servicio">Tratamiento hidratante</h3>
+                <div class="descripcion">
+                    <p>El tratamiento hidratante facial nutre, hidrata y revitaliza la piel profundamente.</p>
+                    <button class="desplegar">Ver más</button>
+                    <div class="mas-info" style="max-height: 0; overflow: hidden;">
+                        <p>
+                            El tratamiento hidratante facial nutre y rehidrata la piel en profundidad, restaurando su
+                            suavidad, luminosidad y elasticidad. Ideal para combatir la sequedad y mantener la frescura.
+                        </p>
+                        <p><span style="font-weight: bold; color: #b28d5b; font-size: 1.2em;">Duración: 1 hora</span></p>
+                        <p><span style="font-weight: bold; color: #b28d5b; font-size: 1.2em;">Precio: 45€</span></p>
+                        <a href="../paginas/construccion.html" class="enlace-servicio boton-pequeno">Reservar</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal específico para Tratamiento hidratante -->
+            <div id="modal-hidratante" class="modal">
+                <span class="cerrar" onclick="cerrarModal('modal-hidratante')">&times;</span>
+                <img class="modal-contenido" id="imagen-hidratante">
+                <div class="texto-modal">
+                    <h2>Tratamiento hidratante</h2>
+                    <p>El tratamiento hidratante facial nutre, hidrata y revitaliza la piel profundamente.<br>Duración: 1 hora. Precio: 45€.</p>
+                    <a href="../paginas/construccion.html" class="enlace-servicio enlace-servicio-pequeño">Reservar</a>
+                </div>
+            </div>
+
+
+            <!-- Tratamiento antiedad -->
+            <div class="servicio">
+                <img src="../imagenes/pura_calma.jpg" alt="Tratamiento antiedad" class="imagen-servicio" onclick="mostrarModal('modal-antiedad', '../imagenes/pura_calma.jpg')">
+                <h3 class="titulo-servicio">Tratamiento antiedad</h3>
+                <div class="descripcion">
+                    <p>El tratamiento antiedad reduce arrugas, reafirma la piel y mejora significativamente su elasticidad.</p>
+                    <button class="desplegar">Ver más</button>
+                    <div class="mas-info" style="max-height: 0; overflow: hidden;">
+                        <p>
+                            El tratamiento antiedad combate los signos del envejecimiento, reduciendo arrugas, líneas
+                            finas y flacidez, mejorando la firmeza y elasticidad de la piel para una apariencia
+                            rejuvenecida.
+                        </p>
+                        <p><span style="font-weight: bold; color: #b28d5b; font-size: 1.2em;">Duración: 1 hora</span></p>
+                        <p><span style="font-weight: bold; color: #b28d5b; font-size: 1.2em;">Precio: 50€</span></p>
+                        <a href="../paginas/construccion.html" class="enlace-servicio boton-pequeno">Reservar</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal específico para Tratamiento antiedad -->
+            <div id="modal-antiedad" class="modal">
+                <span class="cerrar" onclick="cerrarModal('modal-antiedad')">&times;</span>
+                <img class="modal-contenido" id="imagen-antiedad">
+                <div class="texto-modal">
+                    <h2>Tratamiento antiedad</h2>
+                    <p>El tratamiento antiedad reduce arrugas, reafirma la piel y mejora significativamente su elasticidad.<br>Duración: 1 hora. Precio: 50€.</p>
+                    <a href="../paginas/construccion.html" class="enlace-servicio enlace-servicio-pequeño">Reservar</a>
+                </div>
+            </div>
+
+
+            <!-- Manicura -->
+            <div class="servicio">
+                <img src="../imagenes/pura_calma.jpg" alt="Manicura" class="imagen-servicio" onclick="mostrarModal('modal-manicura', '../imagenes/pura_calma.jpg')">
+                <h3 class="titulo-servicio">Manicura</h3>
+                <div class="descripcion">
+                    <p>La manicura embellece las uñas, mejorando su forma y apariencia.</p>
+                    <button class="desplegar">Ver más</button>
+                    <div class="mas-info" style="max-height: 0; overflow: hidden;">
+                        <p>La manicura es un tratamiento de belleza que embellece las manos y uñas, cuidando su salud y
+                            estética. Incluye limpieza, hidratación, y el esmaltado para resaltar su elegancia natural.</p>
+                        <p><span style="font-weight: bold; color: #b28d5b; font-size: 1.2em;">Duración: 50 minutos</span></p>
+                        <p><span style="font-weight: bold; color: #b28d5b; font-size: 1.2em;">Precio: 35€</span></p>
+                        <a href="../paginas/construccion.html" class="enlace-servicio boton-pequeno">Reservar</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal específico para Manicura -->
+            <div id="modal-manicura" class="modal">
+                <span class="cerrar" onclick="cerrarModal('modal-manicura')">&times;</span>
+                <img class="modal-contenido" id="imagen-manicura">
+                <div class="texto-modal">
+                    <h2>Manicura</h2>
+                    <p>La manicura embellece las uñas, mejorando su forma y apariencia.
+                        <br>Duración: 50 minutos. Precio: 35€.</p>
+                    <a href="../paginas/construccion.html" class="enlace-servicio enlace-servicio-pequeño">Reservar</a>
+                </div>
+            </div>
+
+
+            <!-- Pedicura -->
+            <div class="servicio">
+                <img src="../imagenes/pura_calma.jpg" alt="Pedicura" class="imagen-servicio" onclick="mostrarModal('modal-pedicura', '../imagenes/pura_calma.jpg')">
+                <h3 class="titulo-servicio">Pedicura</h3>
+                <div class="descripcion">
+                    <p>La pedicura cuida y embellece los pies, dejando una piel suave.</p>
+                    <button class="desplegar">Ver más</button>
+                    <div class="mas-info" style="max-height: 0; overflow: hidden;">
+                        <p>La pedicura es un tratamiento que embellece y cuida los pies, incluyendo exfoliación,
+                            hidratación, corte y cuidado de uñas, dejándolos suaves, saludables y perfectamente
+                            presentados.</p>
+                        <p><span style="font-weight: bold; color: #b28d5b; font-size: 1.2em;">Duración: 50 minutos</span></p>
+                        <p><span style="font-weight: bold; color: #b28d5b; font-size: 1.2em;">Precio: 30€</span></p>
+                        <a href="../paginas/construccion.html" class="enlace-servicio boton-pequeno">Reservar</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal específico para Pedicura -->
+            <div id="modal-pedicura" class="modal">
+                <span class="cerrar" onclick="cerrarModal('modal-pedicura')">&times;</span>
+                <img class="modal-contenido" id="imagen-pedicura">
+                <div class="texto-modal">
+                    <h2>Pedicura</h2>
+                    <p>La pedicura cuida y embellece los pies, dejando una piel suave.
+                        <br>Duración: 50 minutos. Precio: 30€.</p>
+                    <a href="../paginas/construccion.html" class="enlace-servicio enlace-servicio-pequeño">Reservar</a>
+                </div>
+            </div>
+
+
+            <!-- Maquillaje -->
+            <div class="servicio">
+                <img src="../imagenes/pura_calma.jpg" alt="Maquillaje" class="imagen-servicio" onclick="mostrarModal('modal-maquillaje', '../imagenes/pura_calma.jpg')">
+                <h3 class="titulo-servicio">Maquillaje</h3>
+                <div class="descripcion">
+                    <p>El Maquillaje resalta la belleza natural, creando un look fresco y elegante.</p>
+                    <button class="desplegar">Ver más</button>
+                    <div class="mas-info" style="max-height: 0; overflow: hidden;">
+                        <p>El maquillaje es una técnica para resaltar y embellecer el rostro. Ofrecemos maquillajes para
+                            diversas ocasiones, como bodas, fiestas, eventos especiales, de día, de noche y artístico.</p>
+                        <p><span style="font-weight: bold; color: #b28d5b; font-size: 1.2em;">Duración: 50 minutos</span></p>
+                        <p><span style="font-weight: bold; color: #b28d5b; font-size: 1.2em;">Precio: 40€</span></p>
+                        <a href="../paginas/construccion.html" class="enlace-servicio boton-pequeno">Reservar</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal específico para Maquillaje -->
+            <div id="modal-maquillaje" class="modal">
+                <span class="cerrar" onclick="cerrarModal('modal-maquillaje')">&times;</span>
+                <img class="modal-contenido" id="imagen-maquillaje">
+                <div class="texto-modal">
+                    <h2>Maquillaje</h2>
+                    <p>El Maquillaje resalta la belleza natural, creando un look fresco y elegante.
+                        <br>Duración: 50 minutos. Precio: 40€.</p>
+                    <a href="../paginas/construccion.html" class="enlace-servicio enlace-servicio-pequeño">Reservar</a>
+                </div>
+            </div>
+
+
+            <!-- Tinte de pestañas -->
+            <div class="servicio">
+                <img src="../imagenes/pura_calma.jpg" alt="Tinte de pestañas" class="imagen-servicio" onclick="mostrarModal('modal-pestanas', '../imagenes/pura_calma.jpg')">
+                <h3 class="titulo-servicio">Tinte de pestañas</h3>
+                <div class="descripcion">
+                    <p>El tinte de pestañas realza la mirada, dándole intensidad y definición.</p>
+                    <button class="desplegar">Ver más</button>
+                    <div class="mas-info" style="max-height: 0; overflow: hidden;">
+                        <p>El tinte de pestañas es un tratamiento estético que define y oscurece las pestañas, dándoles más volumen e intensidad, realzando la mirada de forma natural y evitando el uso diario de rímel.</p>
+                        <p><span style="font-weight: bold; color: #b28d5b; font-size: 1.2em;">Duración: 30 minutos</span></p>
+                        <p><span style="font-weight: bold; color: #b28d5b; font-size: 1.2em;">Precio: 30€</span></p>
+                        <a href="../paginas/construccion.html" class="enlace-servicio boton-pequeno">Reservar</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal específico para Tinte de pestañas -->
+            <div id="modal-pestanas" class="modal">
+                <span class="cerrar" onclick="cerrarModal('modal-pestanas')">&times;</span>
+                <img class="modal-contenido" id="imagen-pestanas">
+                <div class="texto-modal">
+                    <h2>Tinte de pestañas</h2>
+                    <p>El tinte de pestañas realza la mirada, dándole intensidad y definición.
+                        <br>Duración: 30 minutos. Precio: 30€.</p>
+                    <a href="../paginas/construccion.html" class="enlace-servicio enlace-servicio-pequeño">Reservar</a>
+                </div>
+            </div>
+
+
+            <!-- Depilación -->
+            <div class="servicio">
+                <img src="../imagenes/pura_calma.jpg" alt="Depilación" class="imagen-servicio" onclick="mostrarModal('modal-depilacion', '../imagenes/pura_calma.jpg')">
+                <h3 class="titulo-servicio">Depilación</h3>
+                <div class="descripcion">
+                    <p>La depilación elimina vello no deseado, dejando la piel suave y sedosa.</p>
+                    <button class="desplegar">Ver más</button>
+                    <div class="mas-info" style="max-height: 0; overflow: hidden;">
+                        <p>La depilación elimina de manera efectiva el vello no deseado, dejando la piel suave, sedosa
+                            y libre de irritaciones, proporcionando un acabado limpio y duradero.</p>
+                        <p><span style="font-weight: bold; color: #b28d5b; font-size: 1.2em;">Duración: 45 minutos</span></p>
+                        <p><span style="font-weight: bold; color: #b28d5b; font-size: 1.2em;">Precio: 35€</span></p>
+                        <a href="../paginas/construccion.html" class="enlace-servicio boton-pequeno">Reservar</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal específico para Depilación -->
+            <div id="modal-depilacion" class="modal">
+                <span class="cerrar" onclick="cerrarModal('modal-depilacion')">&times;</span>
+                <img class="modal-contenido" id="imagen-depilacion">
+                <div class="texto-modal">
+                    <h2>Depilación</h2>
+                    <p>La depilación elimina vello no deseado, dejando la piel suave y sedosa.
+                        <br>Duración: 45 minutos. Precio: 35€.</p>
+                    <a href="../paginas/construccion.html" class="enlace-servicio enlace-servicio-pequeño">Reservar</a>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <!-- <?php include '../includes/footer.php'; ?> -->
+
+    <footer class="footer">
+    <div class="footer-container">
+        <div class="footer-logo">
+            <a href="../index.html">
+                <img src="../imagenes/logo.png" alt="Logo Pura Calma">
+            </a>
+        </div>
+        <div class="footer-links">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../servicios/servicios.html">Servicios</a></li>
+                <li><a href="../paginas/quienes_somos.html">Quiénes Somos</a></li>
+                <li><a href="../paginas/contacto.html">Contacto</a></li>
+                <li><a href="../../paginas/ppd.html">Política de Protección de Datos</a></li>
+                <li><a href="../../paginas/preguntas_frecuentes.html">Preguntas frecuentes</a></li>
+            </ul>
+        </div>
+        <div class="footer-social">
+            <ul>
+                <li><a href="https://www.facebook.com" target="_blank">
+                        <img src="../imagenes/redes_facebook.png" alt="enlace facebook" style="width:50px;height:auto;"></a></li>
+                <li><a href="https://www.instagram.com" target="_blank">
+                        <img src="../imagenes/redes_instagram.png" alt="enlace instagram" style="width:50px;height:auto;"></a></li>
+                <li><a href="https://www.youtube.com" target="_blank">
+                        <img src="../imagenes/redes_youtube.png" alt="enlace youtube" style="width:50px;height:auto;"></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 Pura Calma. Todos los derechos reservados.</p>
+    </div>
+</footer>
+
+
+
+
+    <button class="btn1" id="btnVolver" onclick="window.history.back()">Volver a la página anterior</button>
+
+    <script src="../js/masajes.js"></script>
+    <script src="../js/js_modal_imagenes.js"></script>
+
+</body>
+
+</html>

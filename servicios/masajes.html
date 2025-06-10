@@ -1,0 +1,324 @@
+<!-- <?php
+session_start();
+?> -->
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masajes - Pura Calma</title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/modal_imagenes.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lora:wght@400&display=swap" rel="stylesheet">
+
+<body>
+
+    <!-- <?php include '../includes/nav.php'; ?> -->
+
+    <nav class="navbar">
+        <a href="../index.html">
+            <div class="logo">
+                <img src="../imagenes/logo.png" alt="Logo">
+            </div>
+        </a>
+
+        <div class="nav-links">
+            <a href="../index.html">Inicio</a>
+
+            <!-- Menú desplegable para Servicios -->
+            <div class="dropdown">
+                <a href="../servicios/servicios.html">Servicios</a>
+                <div class="dropdown-content">
+                    <a href="../servicios/masajes.html">Masajes</a>
+                    <a href="../servicios/terapias_orientales.html">Terapias Orientales</a>
+                    <a href="../servicios/estetica_basica.html">Estética Básica</a>
+                    <a href="../servicios/tratamientos_faciales.html">Tratamientos Faciales</a>
+                    <a href="../servicios/tratamientos_corporales.html">Tratamientos Corporales</a>
+                </div>
+            </div>
+
+            <a href="../paginas/construccion.html">Reservas online</a>
+            <a href="../paginas/construccion.html">Tienda</a>
+            <a href="../paginas/construccion.html">Zona premium</a>
+            <a href="../paginas/quienes_somos.phtml">Quienes somos</a>
+            <a href="../paginas/contacto.html">Contacto</a>
+            <a href="../videos/demobd.mp4">Demo BD</a>
+            <a href="../paginas/construccion.html" class="nav-link">Iniciar sesión</a>
+
+        </div>
+    </nav>
+
+    <section class="about-us">
+        <div class="about-content1">
+            <div class="text-content">
+                <h1 class="titulo">Masajes</h1>
+                <p>En <strong>Pura Calma</strong>, te ofrecemos un refugio de tranquilidad donde cada masaje es una
+                    invitación a la
+                    relajación y el bienestar. Nuestros expertos terapeutas están dedicados a proporcionarte una
+                    experiencia única que revitalice tanto tu cuerpo como tu mente.</p>
+                <p>Descubre nuestra variedad de masajes, desde los más relajantes hasta los terapéuticos, diseñados para
+                    aliviar tensiones y renovar tu energía. Cada sesión en Pura Calma es una oportunidad para
+                    desconectar y encontrar el equilibrio.</p>
+                <p>Te invitamos a sumergirte en un ambiente de paz y cuidado. Reserva tu masaje hoy mismo y permite que
+                    <strong>Pura Calma</strong> te guíe hacia un estado de serenidad y renovación.
+                </p>
+            </div>
+        </div>
+
+        <section class="servicios">
+            
+            <!-- Masaje sueco -->
+            <div class="servicio">
+                <img src="../imagenes/pura_calma.jpg" alt="Masaje sueco" class="imagen-servicio" onclick="mostrarModal('modal-sueco', '../imagenes/pura_calma.jpg')">
+                <h3 class="titulo-servicio">Masaje sueco</h3>
+                <div class="descripcion">
+                    <p>Técnica de masaje que utiliza movimientos suaves para relajar músculos.</p>
+                    <button class="desplegar">Ver más</button>
+                    <div class="mas-info" style="max-height: 0; overflow: hidden;">
+                        <p>El masaje sueco es una técnica terapéutica que utiliza movimientos largos, suaves,
+                            amasamientos, fricciones y golpeteos para relajar los músculos, mejorar la
+                            circulación y reducir tensiones.</p>
+                        <p><span style="font-weight: bold; color: #b28d5b; font-size: 1.2em;">Duración: 50 minutos</span></p>
+                        <p><span style="font-weight: bold; color: #b28d5b; font-size: 1.2em;">Precio: 45€</span></p>
+                        <a href="../paginas/construccion.html" class="enlace-servicio boton-pequeno">Reservar</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal específico para Masaje sueco -->
+            <div id="modal-sueco" class="modal">
+                <span class="cerrar" onclick="cerrarModal('modal-sueco')">&times;</span>
+                <img class="modal-contenido" id="imagen-sueco">
+                <div class="texto-modal">
+                    <h2>Masaje sueco</h2>
+                    <p>Técnica de masaje que utiliza movimientos suaves para relajar músculos.
+                        <br>Duración: 50 minutos. Precio: 45€.</p>
+                    <a href="../paginas/construccion.html" class="enlace-servicio enlace-servicio-pequeño">Reservar</a>
+                </div>
+            </div>
+
+
+            <!-- Masaje tailandés -->
+            <div class="servicio">
+                <img src="../imagenes/pura_calma.jpg" alt="Masaje tailandés" class="imagen-servicio" onclick="mostrarModal('modal-tailandes', '../imagenes/pura_calma.jpg')">
+                <h3 class="titulo-servicio">Masaje tailandés</h3>
+                <div class="descripcion">
+                    <p>Masaje terapéutico que combina estiramientos, presiones y movimientos para aliviar tensiones.</p>
+                    <button class="desplegar">Ver más</button>
+                    <div class="mas-info" style="max-height: 0; overflow: hidden;">
+                        <p>El masaje tailandés combina presiones profundas, estiramientos y manipulaciones corporales en puntos específicos, mejorando la circulación, flexibilidad y aliviando tensiones musculares, sin usar aceites.</p>
+                        <p><span style="font-weight: bold; color: #b28d5b; font-size: 1.2em;">Duración: 1 hora</span></p>
+                        <p><span style="font-weight: bold; color: #b28d5b; font-size: 1.2em;">Precio: 55€</span></p>
+                        <a href="../paginas/construccion.html" class="enlace-servicio boton-pequeno">Reservar</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal específico para Masaje tailandés -->
+            <div id="modal-tailandes" class="modal">
+                <span class="cerrar" onclick="cerrarModal('modal-tailandes')">&times;</span>
+                <img class="modal-contenido" id="imagen-tailandes">
+                <div class="texto-modal">
+                    <h2>Masaje tailandés</h2>
+                    <p>Masaje terapéutico que combina estiramientos, presiones y movimientos para aliviar tensiones. 
+                        <br>Duración: 1 hora. Precio: 55€.</p>
+                    <a href="../paginas/construccion.html" class="enlace-servicio enlace-servicio-pequeño">Reservar</a>
+                </div>
+            </div>
+
+
+            <!-- Masaje profundo -->
+            <div class="servicio">
+                <img src="../imagenes/pura_calma.jpg" alt="Masaje profundo" class="imagen-servicio" onclick="mostrarModal('modal-profundo', '../imagenes/pura_calma.jpg')">
+                <h3 class="titulo-servicio">Masaje profundo</h3>
+                <div class="descripcion">
+                    <p>Masaje terapéutico que utiliza presión intensa para liberar tensiones musculares profundas.</p>
+                    <button class="desplegar">Ver más</button>
+                    <div class="mas-info" style="max-height: 0; overflow: hidden;">
+                        <p>El masaje de tejido profundo aplica presión intensa y controlada en capas musculares profundas para aliviar tensiones crónicas, reducir dolor muscular y mejorar la flexibilidad y circulación.</p>
+                        <p><span style="font-weight: bold; color: #b28d5b; font-size: 1.2em;">Duración: 1 hora</span></p>
+                        <p><span style="font-weight: bold; color: #b28d5b; font-size: 1.2em;">Precio: 50€</span></p>
+                        <a href="../paginas/construccion.html" class="enlace-servicio boton-pequeno">Reservar</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal específico para Masaje profundo -->
+            <div id="modal-profundo" class="modal">
+                <span class="cerrar" onclick="cerrarModal('modal-profundo')">&times;</span>
+                <img class="modal-contenido" id="imagen-profundo">
+                <div class="texto-modal">
+                    <h2>Masaje profundo</h2>
+                    <p>Masaje terapéutico que utiliza presión intensa para liberar tensiones musculares profundas. 
+                        <br>Duración: 1 hora. Precio: 50€.</p>
+                    <a href="../paginas/construccion.html" class="enlace-servicio enlace-servicio-pequeño">Reservar</a>
+                </div>
+            </div>
+
+
+            <!-- Masaje deportivo -->
+            <div class="servicio">
+                <img src="../imagenes/pura_calma.jpg" alt="Masaje deportivo" class="imagen-servicio" onclick="mostrarModal('modal-deportivo', '../imagenes/pura_calma.jpg')">
+                <h3 class="titulo-servicio">Masaje deportivo</h3>
+                <div class="descripcion">
+                    <p>Masaje terapéutico diseñado para prevenir y tratar lesiones deportivas y mejorar rendimiento.</p>
+                    <button class="desplegar">Ver más</button>
+                    <div class="mas-info" style="max-height: 0; overflow: hidden;">
+                        <p>El masaje deportivo se enfoca en aliviar tensiones musculares, prevenir lesiones y acelerar la recuperación tras el ejercicio intenso, mejorando la flexibilidad y el rendimiento físico.</p>
+                        <p><span style="font-weight: bold; color: #b28d5b; font-size: 1.2em;">Duración: 1 hora</span></p>
+                        <p><span style="font-weight: bold; color: #b28d5b; font-size: 1.2em;">Precio: 60€</span></p>
+                        <a href="../paginas/construccion.html" class="enlace-servicio boton-pequeno">Reservar</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal específico para Masaje deportivo -->
+            <div id="modal-deportivo" class="modal">
+                <span class="cerrar" onclick="cerrarModal('modal-deportivo')">&times;</span>
+                <img class="modal-contenido" id="imagen-deportivo">
+                <div class="texto-modal">
+                    <h2>Masaje deportivo</h2>
+                    <p>Masaje terapéutico diseñado para prevenir y tratar lesiones deportivas y mejorar rendimiento.
+                        <br>Duración: 1 hora. Precio: 60€.</p>
+                    <a href="../paginas/construccion.html" class="enlace-servicio enlace-servicio-pequeño">Reservar</a>
+                </div>
+            </div>
+
+
+            <!-- Masaje aromaterapia -->
+            <div class="servicio">
+                <img src="../imagenes/pura_calma.jpg" alt="Masaje aromaterapia" class="imagen-servicio" onclick="mostrarModal('modal-aromaterapia', '../imagenes/pura_calma.jpg')">
+                <h3 class="titulo-servicio">Masaje aromaterapia</h3>
+                <div class="descripcion">
+                    <p>Masaje que utiliza aceites esenciales para promover relajación y bienestar emocional.</p>
+                    <button class="desplegar">Ver más</button>
+                    <div class="mas-info" style="max-height: 0; overflow: hidden;">
+                        <p>El masaje de aromaterapia combina técnicas de masaje con aceites esenciales,
+                            promoviendo la relajación, reduciendo el estrés, mejorando el estado de ánimo y
+                            equilibrando las emociones.</p>
+                        <p><span style="font-weight: bold; color: #b28d5b; font-size: 1.2em;">Duración: 1 hora</span></p>
+                        <p><span style="font-weight: bold; color: #b28d5b; font-size: 1.2em;">Precio: 48€</span></p>
+                        <a href="../paginas/construccion.html" class="enlace-servicio boton-pequeno">Reservar</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal específico para Masaje aromaterapia -->
+            <div id="modal-aromaterapia" class="modal">
+                <span class="cerrar" onclick="cerrarModal('modal-aromaterapia')">&times;</span>
+                <img class="modal-contenido" id="imagen-aromaterapia">
+                <div class="texto-modal">
+                    <h2>Masaje aromaterapia</h2>
+                    <p>Masaje que utiliza aceites esenciales para promover relajación y bienestar emocional.
+                        <br>Duración: 1 hora. Precio: 48€.</p>
+                    <a href="../paginas/construccion.html" class="enlace-servicio enlace-servicio-pequeño">Reservar</a>
+                </div>
+            </div>
+
+
+            <!-- Masaje shiatsu -->
+            <div class="servicio">
+                <img src="../imagenes/pura_calma.jpg" alt="Masaje shiatsu" class="imagen-servicio" onclick="mostrarModal('modal-shiatsu', '../imagenes/pura_calma.jpg')">
+                <h3 class="titulo-servicio">Masaje shiatsu</h3>
+                <div class="descripcion">
+                    <p>Masaje japonés que utiliza presión en puntos específicos para equilibrar energía.</p>
+                    <button class="desplegar">Ver más</button>
+                    <div class="mas-info" style="max-height: 0; overflow: hidden;">
+                        <p>El masaje shiatsu es una técnica japonesa que aplica presión con los dedos, palmas y
+                            pulgares en puntos específicos del cuerpo, equilibrando energía y promoviendo la
+                            salud.</p>
+                        <p><span style="font-weight: bold; color: #b28d5b; font-size: 1.2em;">Duración: 1 hora</span></p>
+                        <p><span style="font-weight: bold; color: #b28d5b; font-size: 1.2em;">Precio: 55€</span></p>
+                        <a href="../paginas/construccion.html" class="enlace-servicio boton-pequeno">Reservar</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal específico para Masaje shiatsu -->
+            <div id="modal-shiatsu" class="modal">
+                <span class="cerrar" onclick="cerrarModal('modal-shiatsu')">&times;</span>
+                <img class="modal-contenido" id="imagen-shiatsu">
+                <div class="texto-modal">
+                    <h2>Masaje shiatsu</h2>
+                    <p>Masaje japonés que utiliza presión en puntos específicos para equilibrar energía. 
+                        <br>Duración: 1 hora. Precio: 55€.</p>
+                    <a href="../paginas/construccion.html" class="enlace-servicio enlace-servicio-pequeño">Reservar</a>
+                </div>
+            </div>
+
+            
+            <!-- Masaje depurante -->
+            <div class="servicio">
+                <img src="../imagenes/pura_calma.jpg" alt="Masaje depurante" class="imagen-servicio" onclick="mostrarModal('modal-depurante', '../imagenes/pura_calma.jpg')">
+                <h3 class="titulo-servicio">Masaje depurante</h3>
+                <div class="descripcion">
+                    <p>Masaje que estimula la eliminación de toxinas, mejora la circulación y revitaliza.</p>
+                    <button class="desplegar">Ver más</button>
+                    <div class="mas-info" style="max-height: 0; overflow: hidden;">
+                        <p>El masaje depurante utiliza técnicas específicas para activar el sistema linfático,
+                            favorecer la eliminación de toxinas, mejorar la circulación y promover una sensación
+                            de bienestar general.</p>
+                        <p><span style="font-weight: bold; color: #b28d5b; font-size: 1.2em;">Duración: 1 hora</span></p>
+                        <p><span style="font-weight: bold; color: #b28d5b; font-size: 1.2em;">Precio: 52€</span></p>
+                        <a href="../paginas/construccion.html" class="enlace-servicio boton-pequeno">Reservar</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal específico para Masaje depurante -->
+            <div id="modal-depurante" class="modal">
+                <span class="cerrar" onclick="cerrarModal('modal-depurante')">&times;</span>
+                <img class="modal-contenido" id="imagen-depurante">
+                <div class="texto-modal">
+                    <h2>Masaje depurante</h2>
+                    <p>Masaje que estimula la eliminación de toxinas, mejora la circulación y revitaliza.
+                        <br>Duración: 1 hora. Precio: 52€.</p>
+                    <a href="../paginas/construccion.html"class="enlace-servicio enlace-servicio-pequeño">Reservar</a>
+                </div>
+            </div>
+
+        </section>
+
+    </section>
+
+    <!-- <?php include '../includes/footer.php'; ?> -->
+
+    <footer class="footer">
+    <div class="footer-container">
+        <div class="footer-logo">
+            <a href="../index.html">
+                <img src="../imagenes/logo.png" alt="Logo Pura Calma">
+            </a>
+        </div>
+        <div class="footer-links">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../servicios/servicios.html">Servicios</a></li>
+                <li><a href="../paginas/quienes_somos.html">Quiénes Somos</a></li>
+                <li><a href="../paginas/contacto.html">Contacto</a></li>
+                <li><a href="../../paginas/ppd.html">Política de Protección de Datos</a></li>
+                <li><a href="../../paginas/preguntas_frecuentes.html">Preguntas frecuentes</a></li>
+            </ul>
+        </div>
+        <div class="footer-social">
+            <ul>
+                <li><a href="https://www.facebook.com" target="_blank">
+                        <img src="../imagenes/redes_facebook.png" alt="enlace facebook" style="width:50px;height:auto;"></a></li>
+                <li><a href="https://www.instagram.com" target="_blank">
+                        <img src="../imagenes/redes_instagram.png" alt="enlace instagram" style="width:50px;height:auto;"></a></li>
+                <li><a href="https://www.youtube.com" target="_blank">
+                        <img src="../imagenes/redes_youtube.png" alt="enlace youtube" style="width:50px;height:auto;"></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 Pura Calma. Todos los derechos reservados.</p>
+    </div>
+</footer>
+
+
+
+    <button class="btn1" id="btnVolver" onclick="window.history.back()">Volver a la página anterior</button>
+
+    <script src="../js/masajes.js"></script>
+    <script src="../js/js_modal_imagenes.js"></script>
+
+</body>
+
+</html>

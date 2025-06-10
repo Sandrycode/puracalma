@@ -1,0 +1,241 @@
+<!-- <?php session_start(); ?> -->
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pura Calma - Donde la tranquilidad se encuentra con el placer</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lora:wght@400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- <?php include 'includes/nav.php'; ?> -->
+
+    <nav class="navbar">
+        <a href="../index.html">
+            <div class="logo">
+                <img src="../imagenes/logo.png" alt="Logo">
+            </div>
+        </a>
+
+        <div class="nav-links">
+            <a href="../index.html">Inicio</a>
+
+            <!-- Menú desplegable para Servicios -->
+            <div class="dropdown">
+                <a href="../servicios/servicios.html">Servicios</a>
+                <div class="dropdown-content">
+                    <a href="../servicios/masajes.html">Masajes</a>
+                    <a href="../servicios/terapias_orientales.html">Terapias Orientales</a>
+                    <a href="../servicios/estetica_basica.html">Estética Básica</a>
+                    <a href="../servicios/tratamientos_faciales.html">Tratamientos Faciales</a>
+                    <a href="../servicios/tratamientos_corporales.html">Tratamientos Corporales</a>
+                </div>
+            </div>
+
+            <a href="../paginas/construccion.html">Reservas online</a>
+            <a href="../paginas/construccion.html">Tienda</a>
+            <a href="../paginas/construccion.html">Zona premium</a>
+            <a href="../paginas/quienes_somos.phtml">Quienes somos</a>
+            <a href="../paginas/contacto.html">Contacto</a>
+            <a href="../videos/demobd.mp4">Demo BD</a>
+            <a href="../paginas/construccion.html" class="nav-link">Iniciar sesión</a>
+
+        </div>
+    </nav>
+
+    <div class="pantalla-inicio">
+        <div class="video-lado">
+            <video autoplay muted loop>
+                <source src="videos/spa-relax.mp4" type="video/mp4">
+                Tu navegador no soporta la etiqueta de video.
+            </video>
+            <div class="overlay-gradient"></div>
+        </div>
+
+        <div class="texto-lado">
+            <div class="text-overlay">Pura Calma</div>
+            <div class="eslogan">Donde la tranquilidad se encuentra con el placer.</div>
+        </div>
+    </div>
+
+    <!-- Aquí colocamos la frase animada justo debajo -->
+    <div class="frase-calma">
+        Déjate envolver por la calma que mereces.
+    </div>
+
+    <section class="info-box">
+        <div class="text-box">
+            <p class="text">"En Pura Calma, cada detalle está pensado para brindarte un refugio de serenidad. Nuestros
+                exclusivos servicios de bienestar y relajación están diseñados para rejuvenecer tanto el cuerpo como la
+                mente. Sumérgete en un ambiente acogedor y lleno de paz, donde el estrés y las preocupaciones se disipan
+                con cada toque. Permítete disfrutar de un viaje sensorial único, rodeado de tranquilidad, aromas
+                envolventes y un cuidado personalizado que te hará sentir renovado. En Pura Calma, cada momento es una
+                invitación a tu bienestar total."</p>
+            <a href="../servicios/servicios.html" class="more-info">Descubre nuestros tratamientos</a>
+        </div>
+
+        <div class="image-box">
+            <a href="pagina-destino.html">
+                <img src="imagenes/centro_masaje.jpg" alt="Descripción de la imagen">
+            </a>
+        </div>
+    </section>
+
+    <section class="gallery">
+        <h2>Galería de imágenes</h2>
+        <div class="gallery-container">
+            <button class="prev-btn">&#10094;</button> <!-- Botón izquierdo -->
+            <div class="gallery-images">
+                <div class="gallery-item">
+                    <img src="imagenes/masajes.jpg" alt="Sala de Masajes">
+                    <p>Área de Masajes</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="imagenes/area_relajacion.jpg" alt="Área de Relajación">
+                    <p>Área de Relajación</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="imagenes/productos1.jpg" alt="Productos de Bienestar">
+                    <p>Productos de Bienestar</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="imagenes/sala_relax.jpg" alt="Sala de Relax">
+                    <p>Sala de Relax</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="imagenes/masajes.jpg" alt="Salón de Masajes">
+                    <p>Salón de Masajes</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="imagenes/productos2.jpg" alt="Ambiente Relax">
+                    <p>Ambiente Relax</p>
+                </div>
+            </div>
+            <button class="next-btn">&#10095;</button> <!-- Botón derecho -->
+        </div>
+    </section>
+
+    <!-- *************************************************************************************** -->
+
+    <section class="testimonials">
+        <h2>Opiniones de nuestros clientes</h2>
+        <div class="testimonial-carousel-wrapper">
+            <div class="testimonial-carousel">
+                <div class="testimonial-item">
+                    <p>"El mejor masaje de mi vida, realmente me ayudó a relajarme y sentirme mejor."</p>
+                    <div class="stars">★★★★★</div>
+                    <h4>- Ana Rodríguez</h4>
+                    <small>Fecha: 12/03/2025</small>
+                </div>
+                <div class="testimonial-item">
+                    <p>"Un servicio excepcional y muy profesional. ¡Lo recomiendo a todos!"</p>
+                    <div class="stars">★★★★☆</div>
+                    <h4>- Carlos Martínez</h4>
+                    <small>Fecha: 15/03/2025</small>
+                </div>
+                <div class="testimonial-item">
+                    <p>"La experiencia fue increíble, definitivamente volveré pronto."</p>
+                    <div class="stars">★★★★★</div>
+                    <h4>- Laura Sánchez</h4>
+                    <small>Fecha: 10/04/2025</small>
+                </div>
+                <div class="testimonial-item">
+                    <p>"Excelente atención y masajes de calidad. Me siento como nuevo."</p>
+                    <div class="stars">★★★★☆</div>
+                    <h4>- Juan Pérez</h4>
+                    <small>Fecha: 05/05/2025</small>
+                </div>
+                <div class="testimonial-item">
+                    <p>“Excelente servicio, superó mis expectativas totalmente. ¡Muy recomendable!”</p>
+                    <div class="stars">★★★★★</div>
+                    <h4>- Laura Benítez</h4>
+                    <small>Fecha: 15/05/2025</small>
+                </div>
+                <div class="testimonial-item">
+                    <p>“Todo excelente, el servicio fue profesional y muy relajante.”</p>
+                    <div class="stars">★★★★★</div>
+                    <h4>- Daniela Ríos</h4>
+                    <small>Fecha: 18/05/2025</small>
+                </div>
+                <div class="testimonial-item">
+                    <p>“Profesionalismo y calidad. Volveré sin duda alguna.”</p>
+                    <div class="stars">★★★★☆</div>
+                    <h4>- Javier Morales</h4>
+                    <small>Fecha: 23/05/2025</small>
+                </div>
+                <div class="testimonial-item">
+                    <p>“Gran experiencia, muy profesional y ambiente agradable en todo momento.”</p>
+                    <div class="stars">★★★★★</div>
+                    <h4>- Camila Torres</h4>
+                    <small>Fecha: 28/05/2025</small>
+                </div>
+                <div class="testimonial-item">
+                    <p>“Relajante, puntual y exactamente lo que necesitaba. Gracias.”</p>
+                    <div class="stars">★★★★★</div>
+                    <h4>- Andrés Salinas</h4>
+                    <small>Fecha: 03/06/2025</small>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-btn prev">Anterior</button>
+        <button class="carousel-btn next">Siguiente</button>
+    </section>
+
+    <section class="special-offer">
+        <h2>Oferta Especial de Verano</h2>
+        <p>¡Aprovecha nuestra oferta especial antes de que termine!</p>
+        <div id="countdown"></div>
+        <a href="../servicios/ofertaespecial.html" id="bookNowBtn">Infórmate Ahora</a>
+        <a href="../paginas/construccion.html" id="discoverPromotionsBtn">Descubre Otras Promociones</a>
+    </section>
+
+    <!-- *************************************************************************************** -->
+
+
+
+    <!-- <?php include 'includes/footer.php'; ?> -->
+
+    <footer class="footer">
+    <div class="footer-container">
+        <div class="footer-logo">
+            <a href="../index.html">
+                <img src="../imagenes/logo.png" alt="Logo Pura Calma">
+            </a>
+        </div>
+        <div class="footer-links">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../servicios/servicios.html">Servicios</a></li>
+                <li><a href="../paginas/quienes_somos.html">Quiénes Somos</a></li>
+                <li><a href="../paginas/contacto.html">Contacto</a></li>
+                <li><a href="../../paginas/ppd.html">Política de Protección de Datos</a></li>
+                <li><a href="../../paginas/preguntas_frecuentes.html">Preguntas frecuentes</a></li>
+            </ul>
+        </div>
+        <div class="footer-social">
+            <ul>
+                <li><a href="https://www.facebook.com" target="_blank">
+                        <img src="../imagenes/redes_facebook.png" alt="enlace facebook" style="width:50px;height:auto;"></a></li>
+                <li><a href="https://www.instagram.com" target="_blank">
+                        <img src="../imagenes/redes_instagram.png" alt="enlace instagram" style="width:50px;height:auto;"></a></li>
+                <li><a href="https://www.youtube.com" target="_blank">
+                        <img src="../imagenes/redes_youtube.png" alt="enlace youtube" style="width:50px;height:auto;"></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 Pura Calma. Todos los derechos reservados.</p>
+    </div>
+</footer>
+
+    <script src="js/js_carrusel_imagenes.js"></script>
+    <script src="js/testimonios_promos.js"></script>
+
+</body>
+
+</html>

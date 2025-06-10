@@ -1,0 +1,242 @@
+<!-- <?php 
+session_start(); 
+?>
+ -->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dónde estamos - Pura Calma</title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lora:wght@400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+<!-- <?php include '../includes/nav.php'; ?> -->
+
+<nav class="navbar">
+        <a href="../index.html">
+            <div class="logo">
+                <img src="../imagenes/logo.png" alt="Logo">
+            </div>
+        </a>
+
+        <div class="nav-links">
+            <a href="../index.html">Inicio</a>
+
+            <!-- Menú desplegable para Servicios -->
+            <div class="dropdown">
+                <a href="../servicios/servicios.html">Servicios</a>
+                <div class="dropdown-content">
+                    <a href="../servicios/masajes.html">Masajes</a>
+                    <a href="../servicios/terapias_orientales.html">Terapias Orientales</a>
+                    <a href="../servicios/estetica_basica.html">Estética Básica</a>
+                    <a href="../servicios/tratamientos_faciales.html">Tratamientos Faciales</a>
+                    <a href="../servicios/tratamientos_corporales.html">Tratamientos Corporales</a>
+                </div>
+            </div>
+
+            <a href="../paginas/construccion.html">Reservas online</a>
+            <a href="../paginas/construccion.html">Tienda</a>
+            <a href="../paginas/construccion.html">Zona premium</a>
+            <a href="../paginas/quienes_somos.phtml">Quienes somos</a>
+            <a href="../paginas/contacto.html">Contacto</a>
+            <a href="../videos/demobd.mp4">Demo BD</a>
+            <a href="../paginas/construccion.html" class="nav-link">Iniciar sesión</a>
+
+        </div>
+    </nav>
+
+
+
+    <section class="location">
+        <div class="location-content">
+            <div class="text-content">
+                <h1>Dónde Estamos</h1>
+                <p>En Pura Calma, sabemos lo importante que es encontrar un espacio adecuado para relajarse y sentirse
+                    bien. Por eso,
+                    hemos elegido una ubicación privilegiada para que puedas disfrutar de la serenidad que ofrecemos en
+                    el corazón de la
+                    ciudad.</p>
+                <p>Nos encontramos en una zona tranquila, rodeados de naturaleza y a tan solo unos minutos del bullicio
+                    urbano. Nuestro
+                    centro de bienestar está ubicado en un entorno accesible, ideal para escapar de la rutina y
+                    sumergirte en un
+                    ambiente de paz y relajación.</p>
+                <p>Queremos que tu experiencia comience en el momento en que llegues a nuestras instalaciones, por lo
+                    que hemos diseñado
+                    un espacio cómodo y acogedor, un espacio creado para que cada paso te acerque a la tranquilidad que
+                    mereces.</p>
+                <p>Visítanos, o déjanos un mensaje, y déjate llevar por la calma. Estamos aquí para ofrecerte el mejor
+                    de los cuidados.</p>
+            </div>
+        </div>
+
+        <div>
+
+            <form action="http://cgi.dominio.es/FormMail.pl" method="post" name="form-contacto" id="form-contacto"
+                enctype="multipart/form-data">
+                <h1>Formulario de Contacto</h1>
+                <div class="campos">
+                    <label for="dato-usuario">
+                        <span class="asterisco">*</span>Nombre (de 2 a 15 caracteres):
+                    </label>
+                    <input type="text" name="dato-usuario" id="dato-usuario" placeholder="Inserta tu nombre">
+                    <span class="mensajes-error" id="error-nombre"></span>
+                </div>
+
+                <div class="campos">
+                    <label for="dato_email">
+                        <span class="asterisco">*</span>e-mail:
+                    </label>
+                    <input type="email" name="dato_email" id="dato_email" placeholder="Dinos tu e-mail de contacto">
+                    <span class="mensajes-error" id="error-email"></span>
+                </div>
+
+                <div class="campos">
+                    <label for="dato_telefono">
+                        <span class="asterisco">*</span>Teléfono para recibir la llamada:
+                    </label>
+                    <input type="text" name="dato_telefono" id="dato_telefono"
+                        placeholder="Dinos tu teléfono de contacto">
+                    <span class="mensajes-error" id="error-telefono"></span>
+                </div>
+
+                <div id="campos-llamada" tabindex="0" class="campos">
+                    <fieldset>
+                        <label>
+                            <span class="asterisco">*</span>
+                            Indica en qué momento del día prefieres que te llamemos:
+                        </label>
+                        <div class="bloque-campos">
+                            <input type="radio" id="momento1" name="momento_llamada" value="1">
+                            <label for="momento1">Por la mañana</label>
+
+                            <input type="radio" id="momento2" name="momento_llamada" value="2">
+                            <label for="momento2">Por la tarde</label>
+
+                            <input type="radio" id="momento3" name="momento_llamada" value="3">
+                            <label for="momento3">Por la noche</label>
+                            <span class="mensajes-error" id="error-momento-llamada"></span>
+                        </div>
+                    </fieldset>
+                </div>
+
+                <div class="campos">
+                    <label for="area_tematica">
+                        <span class="asterisco">*</span>
+                        Área temática de la consulta:
+                    </label>
+                    <select name="area_tematica" id="area_tematica">
+                        <option value="">Elije una opción</option>
+                        <option value="1">Promociones</option>
+                        <option value="2">Servicios</option>
+                        <option value="3">Zona premium</option>
+                        <option value="4">Citas y métodos de pago</option>
+                        <option value="5">Cualificación de nuestros profesionales</option>
+                        <option value="6">Cláusulas de protección de datos</option>
+                    </select>
+                    <span class="mensajes-error" id="error-tematica"></span>
+                </div>
+
+                <div class="campos">
+                    <label for="dato_consulta">
+                        <span class="asterisco">*</span>
+                        Escribe aquí su consulta (máximo 1000 caracteres):
+                    </label><br>
+                    <textarea name="dato_consulta" id="dato_consulta" cols="30" rows="10"></textarea>
+                    <span class="mensajes-error" id="error-consulta"></span>
+                    <div class="mensaje-caracteres"></div>
+                </div>
+
+                <div class="campos" id="clausulas">
+                    <input type="checkbox" name="dato_acepto_clausulas" id="dato_acepto_clausulas" value="1">
+                    <label for="dato_acepto_clausulas">
+                        <span class="asterisco">*</span>Acepto las cláusulas de protección de datos
+                    </label>
+                    <a href="ppd.html">Leer cláusulas</a>
+                    <span class="mensajes-error" id="error-clausulas"></span>
+                </div>
+
+                <!-- Botón de enviar formulario -->
+                <div class="campos">
+                    <input type="submit" value="Enviar formulario">
+                </div>
+            </form> <!-- FIN Formulario -->
+        </div>
+
+
+        <!-- Texto centrado para la ubicación -->
+        <div class="map-text" style="text-align: center;">
+            <p style="color: #ddd; font-size: 15px; line-height: 0.5;">Encuentra nuestra ubicación:</p>
+            <p style="color: #ddd; font-size: 15px; line-height: 0.5;">Pura Calma</p>
+            <p style="color: #ddd; font-size: 15px; line-height: 0.5;">Calle del Bosque Encantado, 12</p>
+            <p style="color: #ddd; font-size: 15px; line-height: 0.5;">28200 El Escorial, Madrid, España</p>
+        </div>
+
+        <div class="map-container">
+            <!-- Mapa de Google con la nueva localización del Bosque de la Herrería -->
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3030.7753649296615!2d-4.159244824509096!3d40.56863764638066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd410906a3190105%3A0x56e87b0d0354e1fa!2sBosque%20de%20la%20Herreria!5e0!3m2!1ses!2ses!4v1733170573090!5m2!1ses!2ses"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <!-- <?php include '../includes/footer.php'; ?> -->
+
+    <footer class="footer">
+    <div class="footer-container">
+        <div class="footer-logo">
+            <a href="../index.html">
+                <img src="../imagenes/logo.png" alt="Logo Pura Calma">
+            </a>
+        </div>
+        <div class="footer-links">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../servicios/servicios.html">Servicios</a></li>
+                <li><a href="../paginas/quienes_somos.html">Quiénes Somos</a></li>
+                <li><a href="../paginas/contacto.html">Contacto</a></li>
+                <li><a href="../../paginas/ppd.html">Política de Protección de Datos</a></li>
+                <li><a href="../../paginas/preguntas_frecuentes.html">Preguntas frecuentes</a></li>
+            </ul>
+        </div>
+        <div class="footer-social">
+            <ul>
+                <li><a href="https://www.facebook.com" target="_blank">
+                        <img src="../imagenes/redes_facebook.png" alt="enlace facebook" style="width:50px;height:auto;"></a></li>
+                <li><a href="https://www.instagram.com" target="_blank">
+                        <img src="../imagenes/redes_instagram.png" alt="enlace instagram" style="width:50px;height:auto;"></a></li>
+                <li><a href="https://www.youtube.com" target="_blank">
+                        <img src="../imagenes/redes_youtube.png" alt="enlace youtube" style="width:50px;height:auto;"></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 Pura Calma. Todos los derechos reservados.</p>
+    </div>
+</footer>
+
+    <button class="btn1" id="btnVolver">Volver a la página anterior</button>
+    <!-- Código JavaScript para botón 'volver a la página anterior' -->
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const btnVolver = document.getElementById('btnVolver');
+            if (btnVolver) {
+                btnVolver.addEventListener('click', () => {
+                    history.back();
+                });
+            }
+        });
+    </script>
+
+
+    <script src="../js/js_validacion_formulario.js"></script>
+
+</body>
+
+</html>
