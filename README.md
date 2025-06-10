@@ -1,4 +1,4 @@
-# Pura Calma
+## 🌿 Pura Calma
 
 ¡Hola! Soy Sandra, y te doy la bienvenida a mi perfil de GitHub. Aquí comparto una muestra de mi trabajo desarrollando soluciones web pensadas para brindar experiencias funcionales, estéticas y con propósito. 
 
