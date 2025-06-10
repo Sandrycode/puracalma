@@ -47,9 +47,9 @@ El proyecto incluye una **demo funcional** con sistema de **inicio de sesión ta
 
 ---
 
-Este proyecto ha sido desarrollado con especial atención al detalle, combinando una lógica frontend orientada a una experiencia visual intuitiva y elegante, con un backend robusto en PHP que gestiona de forma eficiente las operaciones internas. Todo se integra en una interfaz accesible que refleja el estilo y la esencia de Pura Calma.
+## 🪄 Este proyecto ha sido desarrollado con especial atención al detalle, combinando una lógica frontend orientada a una experiencia visual intuitiva y elegante, con un backend robusto en PHP que gestiona de forma eficiente las operaciones internas. Todo se integra en una interfaz accesible que refleja el estilo y la esencia de Pura Calma.
 
 ---
 
-✨ *Bienvenido a Pura Calma, donde cada línea de código busca generar bienestar.*
+## ✨ *Bienvenido a Pura Calma, donde cada línea de código busca generar bienestar.*
 
