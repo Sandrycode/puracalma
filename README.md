@@ -47,6 +47,12 @@ El proyecto incluye una **demo funcional** con sistema de **inicio de sesión ta
 
 ---
 
+ ## 🖥️ Demo del Proyecto 
+
+- **https://sandrycode.github.io/puracalma/**
+
+---
+
 🪄 Este proyecto ha sido desarrollado con especial atención al detalle, combinando una lógica frontend orientada a una experiencia visual intuitiva y elegante, con un backend robusto en PHP que gestiona de forma eficiente las operaciones internas. Todo se integra en una interfaz accesible que refleja el estilo y la esencia de Pura Calma.
 
 ---
