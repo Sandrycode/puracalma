@@ -20,7 +20,7 @@ Aunque GitHub Pages no ejecuta PHP, puedes ver el funcionamiento completo del si
 
 - 📌 [Paseo general por la web](https://youtu.be/WwVmqHRiFnM)
 - 📝 [Registro de nuevos clientes](https://youtu.be/hCo3Fzpr_8g)
-- 🔐 [Inicio de sesión (login)](https://youtu.be/GttLlHOqy5k)
+- 🔐 [Restablecer contraseña](https://youtu.be/GttLlHOqy5k)
 - 🧑‍💼 [Panel de administración](https://youtu.be/cNGVL20Bpdk)
 - 👥 [Panel de clientes](https://youtu.be/XHKdA53uUdw)
 
